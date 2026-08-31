@@ -1,11 +1,20 @@
-import { TextInput } from "react-native";
-import { View, Text } from "react-native";
+import { View, Text, TextInput, StyleSheet } from "react-native";
 
-export default function LabeledInput() {
+export default function LabeledInput({ label  }) {
     return (
-        <View>
-            <Text>Nome:</Text>
-            <TextInput />
+        <View style={styles.wrapper}>
+            <Text>
+                { label }
+            </Text>
+            <TextInput placeholderTextColor="#B5B5B5" />
+           
         </View>
     )
 }
+
+const styles = StyleSheet.create({
+    wrapper: {
+        width: "100%", // Faz o componente ocupar toda a largura disponível
+        marginBottom: 14, // Define o espaço abaixo do campo
+    }
+})
