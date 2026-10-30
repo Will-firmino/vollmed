@@ -33,4 +33,4 @@
 <SafeAreaView></SafeAreaView> -> é um componente que garante que o conteúdo da tela não fique escondido atrás de elementos do sistema.
 <KeyboardAvoidingView></KeyboardAvoidingView> -> é um componente que ajusta automaticamente o layout do teclado virtual na tela, quando ele é aberto.
 <ScrollView></ScrollView> -> é um componente que permite que o conteúdo da tela seja rolável, caso ultrapasse a altura da tela.
-  - keyboardShouldPersistTaps -> 
+  - keyboardShouldPersistTaps -> Permite tocar nos botôes com o teclado aberto.

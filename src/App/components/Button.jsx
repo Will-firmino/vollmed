@@ -1,5 +1,5 @@
 // Componente reutilizável do botão principal
-import { Pressable, Text, StyleSheet } from "react-native";
+import { TouchableOpacity, Text, StyleSheet } from "react-native";
 import colors from "../theme/colors"
 
 const BG_BUTTON = '#00213D';
@@ -7,9 +7,9 @@ const TEXT_PRIMARY = '#FFFFFF';
 
 export default function Button({ textButton }) {
     return(
-        <Pressable style={styles.button}>
+        <TouchableOpacity style={styles.button}>
             <Text  style={styles.title}>{ textButton  ? textButton : "Enviar" }</Text>
-        </Pressable>
+        </TouchableOpacity>
     )
 }
 
