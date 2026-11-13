@@ -1,9 +1,13 @@
 // Componente funcional que contem a porta de entrada do App
-
-import LoginScreen from "./App/screens/LoginScreen";
+import { SafeAreaProvider } from "react-native-safe-area-context";
+import AppNavigator from "./App/routes/AppNavigator"
 
 export default function App() {
-    return <LoginScreen />
+    return (
+      <SafeAreaProvider>
+        <AppNavigator />
+      </SafeAreaProvider>
+    )
 }
 
 

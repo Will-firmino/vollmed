@@ -1,0 +1,11 @@
+const typography = {
+  h1: { fontSize: 24, fontWeight: '700' },
+  h2: { fontSize: 20, fontWeight: '700' },
+  h3: { fontSize: 16, fontWeight: '700' },
+  body: { fontSize: 14, fontWeight: '400' },
+  bodyBold: { fontSize: 14, fontWeight: '700' },
+  small: { fontSize: 12, fontWeight: '400' },
+  label: { fontSize: 13, fontWeight: '700' },
+};
+
+export default typography;

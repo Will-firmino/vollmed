@@ -1,9 +1,15 @@
-import ScreenContainer from "../components/ScreenContainer";
-import Logo from "../components/Logo";
 import { Text, StyleSheet } from "react-native";
+import { useState } from "react";
+
 import LabeledInput from "../components/LabeledInput";
 import Button from "../components/Button";
-import { useState } from "react";
+
+import ScreenContainer from "../components/ScreenContainer";
+import Logo from "../components/Logo";
+
+import colors from "../theme/colors";
+import typography from "../theme/typography";
+import spacing from "../theme/spacing";
 
 export default function RegisterScreen1() {
     const [nome, setNome] = useState("");
@@ -52,5 +58,7 @@ const styles = StyleSheet.create({
   title: {
     textAlign: "center",
     fontSize: 22,
+    color: colors.textSecondary,
+    marginBottom: spacing.xl,
   },
 });
