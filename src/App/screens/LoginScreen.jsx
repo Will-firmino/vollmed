@@ -18,7 +18,7 @@ export default function LoginScreen() {
           label="Email:"
           placeholder="Insira seu endereço de email:"
           />
-        <LabeledInput 
+        <LabeledInput  
           label="Senha:"
           placeholder="Insira sua senha:"
         />
